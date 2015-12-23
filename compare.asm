@@ -1,8 +1,3 @@
-section .data
-	firstOperand equ 100
-	secondOperand equ 200
-	notEqualMsg db  `Strings aren't equal.\n`
-
 section .text
 	global _start
 
@@ -28,3 +23,8 @@ _start:
 	mov rax, 60	;	sys_exit
 	mov rdi, 1	;	return 1 for error
 	syscall
+
+section .data
+	firstOperand equ 100
+	secondOperand equ 200
+	notEqualMsg db  `Strings aren't equal.\n`

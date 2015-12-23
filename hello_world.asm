@@ -1,6 +1,3 @@
-section .data
-	msg db  "Hello, world!"
-
 section .text
 	global _start
 _start:
@@ -12,3 +9,6 @@ _start:
 	mov rax, 60	;	sys_exit
 	mov rdi, 0	;	return 0
 	syscall
+
+section .data
+	msg db  "Hello, world!"
