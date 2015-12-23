@@ -1,7 +1,7 @@
 section .data
 	firstOperand equ 100
 	secondOperand equ 200
-	notEqualMsg db  "Strings aren't equal.", 10	;	ASCII 10 == '\n'
+	notEqualMsg db  `Strings aren\'t equal.\n`
 
 section .text
 	global _start
